@@ -1,0 +1,115 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.main{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.green{
+    background-color: rgb(37, 66,65);
+}
+
+.yellow{
+    background-color: rgb(247,169,65);
+}
+
+.dot-color{
+    background-color: rgb(149,131,66);
+}
+.virus{
+
+    position: relative;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+@-webkit-keyframes rotating /* Safari and Chrome */ {
+    from {
+      -webkit-transform: rotate(0deg);
+      -o-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    to {
+      -webkit-transform: rotate(360deg);
+      -o-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes rotating {
+    from {
+      -ms-transform: rotate(0deg);
+      -moz-transform: rotate(0deg);
+      -webkit-transform: rotate(0deg);
+      -o-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    to {
+      -ms-transform: rotate(360deg);
+      -moz-transform: rotate(360deg);
+      -webkit-transform: rotate(360deg);
+      -o-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+  .rotating {
+    -webkit-animation: rotating 12s linear infinite;
+    -moz-animation: rotating 12s linear infinite;
+    -ms-animation: rotating 12s linear infinite;
+    -o-animation: rotating 12s linear infinite;
+    animation: rotating 12s linear infinite;
+  }
+.line1,
+.line2,
+.line3{
+    z-index: 1;
+    position: absolute;
+    border-radius: 10px;
+    height: 10px;
+}
+.line1{
+    top: 50px;
+    right: -60px;
+    width: 200px;
+    transform: rotate(30deg);
+}
+.line2{
+    top: 35px;
+    right: -40px;
+    width: 180px;
+    transform: rotate(330deg);
+}
+.line3{
+    top: 35px;
+    right: -40px;
+    width: 185px;
+    transform: rotate(90deg);
+}
+.dot1,
+.dot2,
+.dot3{
+    z-index: 2;
+    border-radius: 50%;
+    position: absolute;
+}
+.dot1{
+    width: 30px;
+    height: 30px;
+    top: 20px;
+    left: 20px;
+}
+.dot2{
+    width: 10px;
+    height: 10px;
+    top: 20px;
+    left: 70px;
+}
+.dot3{
+    width: 20px;
+    height: 20px;
+    top: 65px;
+    left: 40px;
+}
